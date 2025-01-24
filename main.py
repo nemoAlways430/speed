@@ -1,3 +1,9 @@
+import getPictures
+import xunji
+import mqttToCar
+getPictures.main()
+driveInfo = xunji.main()
+mqttToCar.driveCar(driveInfo.topic, driveInfo.speed)
 # 执行 getPictures.py, 存好图片 （目前其中是Bill提供的示例代码）
 
 # 识别图片，判断新的行动行为 （核心代码）
