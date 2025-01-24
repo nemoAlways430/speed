@@ -26,4 +26,4 @@ mqttc.connect(broker, port, keepalive)
 mqttc.loop_forever()
 
 # test 慎重运行 保证小车在安全的位置
-# mqttc.publish(TopicMoveV, 5)  
+# mqttc.publish(TopicMoveV, 50) 
