@@ -1,9 +1,9 @@
 import paho.mqtt.client as mqtt  
 
 client_id = 'car'
-broker = "192.168.1.7" 
+broker = "192.168.1.8" 
 port = 1883 
-keepalive = 60 
+keepalive = 60
 
 CarState = 0
 
@@ -21,7 +21,6 @@ TopicCarStart = "car/Start"
 mqttc = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 mqttc.user_data_set([])
 mqttc.connect(broker, port, keepalive)
-mqttc.loop_forever()
 
 def driveCar(topic, speed):
     mqttc.publish(topic, speed) 
