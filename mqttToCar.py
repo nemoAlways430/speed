@@ -5,6 +5,7 @@ client_id = 'car'
 broker = "192.168.1.5" 
 port = 1883 
 keepalive = 60
+keepalive = 60
 
 CarState = 0
 
